@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #0c0c0c; padding: 8px; }
+        th { background-color: #7ad8f5; }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Student Management System</h1>
+
+    <form id="studentForm">
+        <input type="hidden" id="studentIndex" value="-1"><br>
+        Name:<input type="text" id="name" placeholder="Name" required><br><br>
+        Age:<input type="number" id="age" placeholder="Age" required><br><br>
+        Grade:<input type="text" id="grade" placeholder="Grade" required><br><br>
+        <button type="submit">Add Student</button>
+    </form>
+    <br><br><br>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+            <!-- Student rows will be inserted here -->
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
